@@ -1,12 +1,10 @@
+import Navbar from '../components/Navbar'
+
 function DashboardPage() {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      <nav className="flex items-center justify-between px-8 py-4 border-b border-gray-700">
-        <h1 className="text-xl font-bold text-blue-400">InterviewAI</h1>
-        <button className="text-gray-300 hover:text-white transition">
-          Logout
-        </button>
-      </nav>
+
+      <Navbar isLoggedIn={true} />
 
       <div className="px-8 py-10">
         <h2 className="text-3xl font-bold mb-2">Welcome back! 👋</h2>
@@ -31,6 +29,7 @@ function DashboardPage() {
           Start New Interview
         </button>
       </div>
+
     </div>
   )
 }
